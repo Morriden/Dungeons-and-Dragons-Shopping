@@ -1,1 +1,1 @@
-import './example.test.js';
+import './details-of-magic-items.test.js';
