@@ -61,4 +61,14 @@ const ringOfTheRam = {
     price: 600
 };
 
+const magicItems = {
+    ringOfTheRam,
+    glamourArmor,
+    immovableRod,
+    ringOfSpellStoring,
+    bagOfHolding,
+    hornOfValhalla,
+    slippersOfSpiderClimbing
+}
+
 export default magicItems;
