@@ -1,4 +1,4 @@
-export default function magicItemTableDetails(cart, magicItem) {
+export default function magicItemRow(cart, magicItem) {
     const tr = document.createElement('tr');
 
     const nameTd = document.createElement('td');

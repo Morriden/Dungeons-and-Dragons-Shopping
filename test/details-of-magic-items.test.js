@@ -5,8 +5,7 @@ import magicItemDetails from '../functions/details-of-magic-items.js';
 import cart from '../magic-items/magic-items-data-cart.js';
 import findById from '../functions/find-by-id.js';
 import calcLineItem from '../functions/calculate-line-item.js';
-import magicItemTableDetails from '../functions/magic-item-table-details.js';
-import magicItems from '../magic-items/magic-items.js';
+import magicItemRow from '../functions/magic-item-row.js';
 
 const test = QUnit.test;
 
@@ -96,7 +95,7 @@ test('takes a cart line item and product and returns the html dom', function(ass
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const el = magicItemTableDetails(bagOfHolding, magicItem);
+    const el = magicItemRow(bagOfHolding, magicItem);
     const outerHTML = el.outerHTML;
     //const outerHTML = el.outerHTML;
     //Assert
