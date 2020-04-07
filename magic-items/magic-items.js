@@ -1,7 +1,7 @@
 const bagOfHolding = {
     id: 'bagOfHolding',
     name: 'Bag of Holding',
-    image: 'bag-of-holding.jpg',
+    image: 'bag-of-holding.png',
     description: 'The bag of holding opens into a nondimensional space: its inside is larger than its outside dimensions.',
     category: 'Wonderous Item',
     price: 400
@@ -55,13 +55,13 @@ const glamourArmor = {
 const ringOfTheRam = {
     id: 'ringOfTheRam',
     name: 'Ring of the Ram',
-    image: 'ring-of-the-ram',
+    image: 'ring-of-the-ram.jpg',
     description: 'The ring of the ram is an ornate ring forged of hard metal. It has the head of a ram as its device. The wearer can use the ring to give forth a ram-like force, manifested by a vaguely discernible shape that resembles the head of a ram.',
     category: 'Ring',
     price: 600
 };
 
-const magicItems = {
+const magicItems = [
     ringOfTheRam,
     glamourArmor,
     immovableRod,
@@ -69,6 +69,6 @@ const magicItems = {
     bagOfHolding,
     hornOfValhalla,
     slippersOfSpiderClimbing
-};
+];
 
 export default magicItems;
