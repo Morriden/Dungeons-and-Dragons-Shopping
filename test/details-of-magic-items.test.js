@@ -2,6 +2,8 @@
 // import example from '../src/example.js';
 
 import magicItemDetails from '../functions/details-of-magic-items.js';
+import cart from '../magic-items/magic-items-data-cart.js';
+import findById from '../functions/find-by-id.js';
 
 const test = QUnit.test;
 
@@ -27,4 +29,18 @@ test('should take element and return element', function(assert) {
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(outerHTML, expected);
+});
+
+test('takes an array and an id and returns the first item found that has an .id property that matches', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const id = 'bagOfHolding';
+    const expected = 'bagOfHolding';
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const foundMagicItem = findById(cart, id);
+    //const outerHTML = el.outerHTML;
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.equal(foundMagicItem, expected);
 });
