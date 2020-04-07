@@ -4,6 +4,7 @@
 import magicItemDetails from '../functions/details-of-magic-items.js';
 import cart from '../magic-items/magic-items-data-cart.js';
 import findById from '../functions/find-by-id.js';
+import calcLineItem from '../functions/calculate-line-item.js';
 
 const test = QUnit.test;
 
@@ -43,4 +44,33 @@ test('takes an array and an id and returns the first item found that has an .id 
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(foundMagicItem, expected);
+});
+
+test('returns null', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const id = 'null';
+    const expected = null;
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const foundMagicItem = findById(cart, id);
+    //const outerHTML = el.outerHTML;
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.equal(null, null);
+});
+
+test('takes quantity and price and returns total', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const quantity = 2;
+    const price = 800;
+    const expected = 1600;
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const total = calcLineItem(quantity, price);
+    //const outerHTML = el.outerHTML;
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.equal(total, expected);
 });
