@@ -5,6 +5,8 @@ import magicItemDetails from '../functions/details-of-magic-items.js';
 import cart from '../magic-items/magic-items-data-cart.js';
 import findById from '../functions/find-by-id.js';
 import calcLineItem from '../functions/calculate-line-item.js';
+import magicItemTableDetails from '../functions/magic-item-table-details.js';
+import magicItems from '../magic-items/magic-items.js';
 
 const test = QUnit.test;
 
@@ -57,7 +59,7 @@ test('returns null', function(assert) {
     //const outerHTML = el.outerHTML;
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(null, null);
+    assert.equal(foundMagicItem, expected);
 });
 
 test('takes quantity and price and returns total', function(assert) {
@@ -73,4 +75,31 @@ test('takes quantity and price and returns total', function(assert) {
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(total, expected);
+});
+
+test('takes a cart line item and product and returns the html dom', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const bagOfHolding = {
+        id: 'bagOfHolding',
+        quantity: 2
+    };
+    const magicItem = {
+        id: 'bagOfHolding',
+        name: 'Bag of Holding',
+        image: 'bag-of-holding.png',
+        description: 'The bag of holding opens into a nondimensional space: its inside is larger than its outside dimensions.',
+        category: 'Wonderous Item',
+        price: 400
+    };
+    const expected = '<tr><td>Bag of Holding</td><td>2</td><td>400</td><td>800</td></tr>';
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const el = magicItemTableDetails(bagOfHolding, magicItem);
+    const outerHTML = el.outerHTML;
+    //const outerHTML = el.outerHTML;
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.equal(outerHTML, expected);
 });
