@@ -17,7 +17,7 @@ body {
     padding: 5px;
     position: relative;
     right: 55px;
-    top: 220px;
+    top: 110px;
 }
 
 .greeting {
@@ -26,7 +26,8 @@ body {
     border-radius: 5px;
     padding: 5px;
     position: relative;
-    left: 65%;
+    left: 72%;
+    bottom: 50px;
 }
 
 .krane {
