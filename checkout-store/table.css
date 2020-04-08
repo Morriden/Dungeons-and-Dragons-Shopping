@@ -20,7 +20,7 @@ table {
 }
 
 body {
-    background-image: url("picture-assets/checkout-picture.jpg");
+    background-image: url("../picture-assets/checkout-picture.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;

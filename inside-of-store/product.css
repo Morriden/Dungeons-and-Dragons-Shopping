@@ -19,7 +19,7 @@
  }
 
  body {
-     background-image: url("picture-assets/store-inside.jpg");
+     background-image: url("../picture-assets/store-inside.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      width: 500px;
@@ -38,6 +38,7 @@
  #magic-items li p {
      font-size: 12px;
      font-style: oblique;
+     font-weight: bold;
  }
 
  #magic-items li button {

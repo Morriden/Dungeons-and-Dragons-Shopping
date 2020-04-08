@@ -14,7 +14,7 @@ function magicItemDetails(magicItem) {
     description.textContent = 'Description: ' + magicItem.description;
     category.textContent = 'Category: ' + magicItem.category;
     price.textContent = 'Price: ' + magicItem.price;
-    button.textContent = 'Purchase!';
+    button.textContent = 'Add to purchase!';
     button.value = magicItem.id;
     button.addEventListener('click', () => {
 

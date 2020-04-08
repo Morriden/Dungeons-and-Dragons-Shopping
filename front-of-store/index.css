@@ -1,7 +1,7 @@
 body {
     width: 500px;
     height: 200px;
-    background-image: url("picture-assets/store-front.png");
+    background-image: url("../picture-assets/store-front.png");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
