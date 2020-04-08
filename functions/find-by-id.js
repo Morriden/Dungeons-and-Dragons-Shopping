@@ -1,13 +1,12 @@
 export default function findById(cart, id) {
-    let magicItem = {};
+    let magicItem;
 
     for (let i = 0; i < cart.length; i++) {
         const magicItemFound = cart[i];
 
         if (magicItemFound.id === id) {
-            magicItem = magicItemFound.id; 
-            return magicItem;
+            magicItem = magicItemFound; 
         }
     }
-    return null;
+    return magicItem;
 }

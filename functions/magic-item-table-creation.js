@@ -1,7 +1,6 @@
 import cart from '../magic-items/magic-items-data-cart.js';
 import magicItems from '../magic-items/magic-items.js';
 import magicItemRow from '../functions/magic-item-row.js';
-import calcLineItem from '../functions/calculate-line-item.js';
 import findById from '../functions/find-by-id.js';
 
 const tbody = document.createElement('tbody');
