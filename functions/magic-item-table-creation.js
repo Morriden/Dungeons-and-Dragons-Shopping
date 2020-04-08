@@ -1,4 +1,3 @@
-import cart from '../magic-items/magic-items-data-cart.js';
 import magicItems from '../magic-items/magic-items.js';
 import magicItemRow from '../functions/magic-item-row.js';
 import findById from '../functions/find-by-id.js';
@@ -29,7 +28,7 @@ if (newCart.length === 0) {
     purchaseButton.addEventListener('click', () => {
         localStorage.removeItem('CART');
         alert('Youve ordered: ' + JSON.stringify(newCart, true, 2));
-        window.location = '../';
+        window.location = '../front-of-store/index.html';
     });
 }
 
