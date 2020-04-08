@@ -8,11 +8,14 @@
      text-align: center;
      padding: 10px;
      border-radius: 5px;
+     width: 200px;
+     position: relative;
+     background-color: rgb(200, 30, 200);
  }
 
  #magic-items li img {
-     width: 200px;
-     height: 200px;
+     width: 150px;
+     height: 150px;
  }
 
  body {
@@ -21,4 +24,33 @@
      background-size: cover;
      width: 500px;
      height: 200px;
+ }
+ a {
+     border: 1px solid black;
+     background-color: goldenrod;
+     padding: 3px;
+ }
+
+ #magic-items li h3 {
+     font-size: 15px;
+ }
+
+ #magic-items li p {
+     font-size: 12px;
+     font-style: oblique;
+ }
+
+ #magic-items li button {
+    position: static;
+    
+ }
+
+ .checkout {
+     position: fixed;
+     left: 1030px;
+ }
+
+ .index {
+     position: fixed;
+     left: 45px;
  }
