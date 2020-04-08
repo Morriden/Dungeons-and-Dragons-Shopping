@@ -23,7 +23,7 @@ test('should take element and return element', function(assert) {
         price: 400
     };
 
-    const expected = '<li><h3>Bag of Holding</h3><img src="../picture-assets/bag-of-holding.jpg"><p>Description: The bag of holding opens into a nondimensional space: its inside is larger than its outside dimensions.</p><p>Category: Wonderous Item</p><p>Price: 400</p></li>';
+    const expected = '<li><h3>Bag of Holding</h3><img src="../picture-assets/bag-of-holding.jpg"><p>Description: The bag of holding opens into a nondimensional space: its inside is larger than its outside dimensions.</p><p>Category: Wonderous Item</p><p>Price: 400</p><button value="bagOfHolding">Add to purchase!</button></li>';
     
     //Act 
     // Call the function you're testing and set the result to a const
