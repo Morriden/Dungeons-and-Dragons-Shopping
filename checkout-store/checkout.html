@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking out!</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Product Name</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td>Total</td>
+            </tr>
+        </thead>
+        <tbody>
+<!---tables rendered here-->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Order Total:</td>
+                <td id="order-total"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <nav>
+        <a href="../front-of-store/index.html">Let me show you out.</a>
+        <a href="../inside-of-store/product.html">Please browse some more!</a>
+    </nav>
+    <button id="purchase-button" class="purchase">Purchase!</button>
+    <script type="module" src="../functions/magic-item-table-creation.js"></script>
+</body>
+</html>

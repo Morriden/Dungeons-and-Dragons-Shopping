@@ -1,7 +1,7 @@
 const bagOfHolding = {
     id: 'bagOfHolding',
     name: 'Bag of Holding',
-    image: 'bag-of-holding.png',
+    image: 'bag-of-holding.jpg',
     description: 'The bag of holding opens into a nondimensional space: its inside is larger than its outside dimensions.',
     category: 'Wonderous Item',
     price: 400
